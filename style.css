@@ -1,0 +1,102 @@
+@font-face {
+    font-family: montserrat;
+    src: url("Montserrat-VariableFont_wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: montserrat;
+    font-size: 18px;
+}
+
+#container-flexbox-row div{
+    color: white;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to left, lightgreen, darkgreen);
+    border-radius: 25px;
+    padding: 10px;
+}
+#container-flexbox-row{
+    display: flex;
+    flex-direction: row;
+}
+
+#container-flexbox-col div{
+    color: white;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, grey, lightgrey);
+    border: 3px solid black;
+    border-radius: 25px;
+    padding: 10px;
+}
+#container-flexbox-col{
+    display: flex;
+    flex-direction: column;
+}
+
+#container-grid div{
+    width: 100%;
+    display: grid;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, sandybrown, green);
+    border: 2px solid black;
+}
+#container-grid{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+}
+
+#container-absolute div{
+    font-size: 16px;
+}
+#container-absolute{
+    color: white;
+    background: radial-gradient(circle, darkred, orangered);
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid black;
+}
+
+#container-estatic div{
+    color: rgb(130, 40, 90);
+}
+#container-estatic{
+    border: 3px solid brown;
+    width: 300px;
+    background-color: cyan;
+}
+
+#container-relativa div{
+    color: white;
+}
+#container-relativa {
+    background-color: black;
+    position: relative;
+    left: 30px;
+    border: 2px solid purple;
+    width: 300px;
+}
+
+#container-fixa div{
+    color: white;
+}
+#container-fixa{
+    background: radial-gradient(circle, purple, darkblue);
+    width: 300px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border: 3px solid purple;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
